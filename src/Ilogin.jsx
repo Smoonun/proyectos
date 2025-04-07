@@ -2,7 +2,7 @@ export default function Ilogin(){
   return(<>
         <header>RHORF Soluciones Industriales</header>
         <nav>Aqui va nuestro logo y la barra de navegacion </nav>
-        <seccion>
+        <section>
           <div>Usuario:</div>
           <h1>Input box</h1>
           <div>
@@ -12,7 +12,7 @@ export default function Ilogin(){
           <button>Iniciar Sesion</button>
           <button>Olvide mi contraseña</button>
 
-        </seccion>
+        </section>
         
     </>
   )
