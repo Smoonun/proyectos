@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Viva la React!
+          Aqui se deberia de ver un link
         </a>
       </header>
     </div>
