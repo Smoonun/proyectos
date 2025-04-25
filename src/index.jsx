@@ -6,7 +6,8 @@ import Boton from './Boton';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-  <Form/>
-  <Boton/>
+   <Form/>
+ {/*<Boton/> */}
+
   </>
   )
