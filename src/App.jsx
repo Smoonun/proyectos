@@ -1,8 +1,12 @@
+import Form from "./component/Login";
+import ExpenseItem from "./component/ExpenseItem";
 export default function App() {
   return (
     <div>
-      <h1>Welcome to React</h1>
-      <p>This is a simple React application.</p>
+      <h1>Hola</h1>
+  
+      <ExpenseItem/>
     </div>
+   
   );
 }
