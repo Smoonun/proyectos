@@ -1,4 +1,3 @@
-import Form from "./component/Login";
 import ExpenseItem from "./component/ExpenseItem";
 export default function App() {
   return (
