@@ -7,13 +7,12 @@ export default function Validacion (){
         .then(data => setData(data))
         .catch(err => console.log(err))
       }, [])
-     
-        for(let i=0 ;i<5; i++){
-            for(let j=0 ;j<5; j++){
-            console.log(data[i][j])
-            console.log(data[i][j])
- }}
-    return (
-        <div>xd</div>
+  
+    
+    return (<>
+        data.map((item) => {
+            item.email 
+        }
+        </>
     )
         }

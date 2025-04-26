@@ -1,10 +1,35 @@
 import './login.css';
 import React, { useEffect, useState } from 'react';
-import Validacion from './Validacion';
 const Form = () => {
+  const [data , setData ] = useState([]);
+  useEffect(() => {
+      fetch('http://localhost:8081/datos')
+      .then(res => res.json())
+      .then(data => setData(data))
+      .catch(err => console.log(err))
+    }, [])
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const Emails = data.map((item) => item.email);
+  const Passwords = data.map((item) => item.password);
+  const Jerarquia = data.map((item) => item.jerarquia);
 
+
+
+  const Validacion =(email, password) => {
+    if (email === '' && password === '') {
+    alert('Please enter your email and password');
+  }else if(Emails.includes(email) && Passwords.includes(password)){
+    let posicion = 
+    (Emails.indexOf(email));
+    let jerarquia = Jerarquia[posicion];
+    alert(jerarquia);
+    } 
+    else{
+      alert('Invalid email or password');
+    }
+   }
+  
    return (
     <div className="bod">
       <form className="form">
