@@ -23,7 +23,7 @@ const Form = () => {
     let posicion = 
     (Emails.indexOf(email));
     let jerarquia = Jerarquia[posicion];
-    alert(jerarquia);
+    alert('Acesso permitido');
     } 
     else{
       alert('Invalid email or password');

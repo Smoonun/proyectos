@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+/*import React, { useEffect, useState } from 'react';
 export default function Validacion (){
  const [data , setData ] = useState([]);
     useEffect(() => {
@@ -16,3 +16,4 @@ export default function Validacion (){
         </>
     )
         }
+    */
