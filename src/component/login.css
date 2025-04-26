@@ -118,5 +118,6 @@
     background-image: url(
       https://wallpapers.com/images/hd/enterprise-digital-graphic-diagram-line-graph-qovqxuu2krufwk3l.jpg
     );
-    background-size: cover;
+    background-size: fill;
+    height: 97vh;
   }

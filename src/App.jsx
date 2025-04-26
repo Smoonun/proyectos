@@ -1,11 +1,10 @@
-import ExpenseItem from "./component/ExpenseItem";
+import  Form from './component/Login';
 export default function App() {
   return (
-    <div>
-      <h1>Hola</h1>
-  
-      <ExpenseItem/>
-    </div>
+    <>
+      
+      <Form/>
+    </>
    
   );
 }
