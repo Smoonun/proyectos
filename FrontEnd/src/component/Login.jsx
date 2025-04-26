@@ -1,18 +1,9 @@
 import './login.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Validacion from './Validacion';
 const Form = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  console.log(email);
-  console.log(password);
-   const Validacion = (email,password) => {
-    if (email === 'Santi28@gmail.com' && password === '123456') { 
-      alert('Login successful!');
-    } else {
-      alert('Invalid email or password!');
-    } 
-    
-  }
 
    return (
     <div className="bod">
