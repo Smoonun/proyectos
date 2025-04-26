@@ -18,7 +18,7 @@ app.get('/', (re, res) => {
 
 app.get('/datos', (req, res) => {
     const sql = "SELECT * FROM datos";
-    db .query(sql, (err, result) => {
+    db .query(sql, (err, data) => {
         if (err) return res.json(err);
         return res.json(data);
     })
