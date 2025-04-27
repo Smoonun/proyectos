@@ -4,6 +4,7 @@ const Form = () => {
   const [data, setData] = useState([]);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  
   useEffect(() => {
     fetch('http://localhost:8081/datos')
       .then(res => res.json())
@@ -16,11 +17,11 @@ const Form = () => {
       alert('Por favor, ingresa tu email y contraseña');
       return null;
     }
-
     const Emails = data.map((item) => item.email);
     const Passwords = data.map((item) => item.password);
     const Jerarquia = data.map((item) => item.jerarquia);
-
+    
+   
     if (Emails.includes(email) && Passwords.includes(password)) {
       const posicion = Emails.indexOf(email);
       const jerarquia = Jerarquia[posicion];
