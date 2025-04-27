@@ -1,6 +1,8 @@
 import './login.css';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'; 
+import { useNavigate } from 'react-router-dom';
 const Form = () => {
+  const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -26,7 +28,23 @@ const Form = () => {
       const posicion = Emails.indexOf(email);
       const jerarquia = Jerarquia[posicion];
       alert('Acceso permitido');
-      return jerarquia;
+      switch(jerarquia){
+        case 0:
+          return navigate('/Gerente-General');
+         case 1:
+          return navigate('/Almacen');
+          case 2:
+          return navigate('/Inventario');
+          case 4:
+          return navigate('/Jefe-Produccion');
+          case 5:
+          return navigate('/Operador');
+        default:
+          return navigate('/');
+        
+  
+      }
+      
     } else {
       alert('Email o contraseña incorrectos');
       return null;
