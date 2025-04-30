@@ -35,9 +35,9 @@ const Form = () => {
           return navigate('/Almacen');
           case 2:
           return navigate('/Inventario');
-          case 4:
+          case 3:
           return navigate('/Jefe-Produccion');
-          case 5:
+          case 4:
           return navigate('/Operador');
         default:
           return navigate('/');
