@@ -2,35 +2,16 @@ import React from 'react'
 import './tableroandon.css'
 export default function TableroAndon() {
   return (
-    <div class="container">
-    <div class="pane">
-        <label class="label">
-            <span>Yes</span>
-            <input
-             id="left"
-              class="input" 
-              name="radio" 
-              type="radio"/>
-        </label>
-        <label class="label">
-            <span>No</span>
-            <input 
-            id="middle"
-             class="input"
-              checked="checked"
-               name="radio" 
-               type="radio"/>
-        </label>
-        <label class="label">
-            <span>Idk</span>
-            <input id="right"
-             class="input" 
-             name="radio" 
-             type="radio"/>
-        </label>
-        <span class="selection"></span>
-    </div>
+    <div className="cards">
+    <button className="btnta" id="green">
+    Sin Fallas
+    </button><br></br>
+    <button className="btnta" id="yellow">
+      Fallo no Critico 
+    </button><br></br>
+    <button className="btnta" id="red">
+      Fallo critico
+    </button>
 </div>
-    
   )
 }

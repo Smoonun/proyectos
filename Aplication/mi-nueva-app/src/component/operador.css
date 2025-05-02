@@ -3,8 +3,9 @@
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 0px;
-  margin-top: 0%;
-  background-color: #5880db;
+  margin: auto;
+  background-color: #8b0f0f;
+  color: #f0e9e6;
 }
   
 .div1 {

@@ -55,7 +55,10 @@ export default function Operador ()  {
       </button>
       </div>
     <div class="div3">
-      <table>
+       <TableroAndon/>
+      </div>
+    <div class="div4">
+    <table>
         <thead>
           <tr>
           <th>#orden</th>
@@ -73,9 +76,6 @@ export default function Operador ()  {
         </tbody>
       </table>
       <button className="btnlg">Logout</button>
-      </div>
-    <div class="div4">
-      <TableroAndon/>
       </div>
     </div>
     <Pie/>
