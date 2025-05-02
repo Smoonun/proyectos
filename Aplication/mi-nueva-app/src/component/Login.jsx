@@ -81,8 +81,8 @@ const Form = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div> 
-        <div className="btn">
-          <button className="button1" type="submit" onClick={()=>{Validacion(email,password);}}>
+        <div className="btn0">
+          <button className="btn1" type="submit" onClick={()=>{Validacion(email,password);}}>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </button>
         </div>
