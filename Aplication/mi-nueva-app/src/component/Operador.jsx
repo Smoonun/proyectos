@@ -49,15 +49,31 @@ export default function Operador ()  {
           </tr>
         </tbody>
       </table>
+      <button className="btn">
+        <span>
+        Finalizar Orden de corte
+      </span>
+      </button>
       </div>
     <div class="div3">
       <table>
         <thead>
+          <tr>
           <th>#orden</th>
           <th>Ver Tabla </th>
           <th>Completa</th>
+          </tr>
         </thead>
+        <tbody>
+          <tr>
+            <td> 1</td>
+            <td><button className="btnvm">Ver mas</button></td>
+            <td><input type="checkbox" />
+          </td>
+          </tr>
+        </tbody>
       </table>
+      <button className="btnlg">Logout</button>
       </div>
     <div class="div4">
       <TableroAndon/>
