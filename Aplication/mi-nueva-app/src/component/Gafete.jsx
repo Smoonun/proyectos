@@ -1,21 +1,18 @@
-import React from 'react'
-import './gafete.css'
-export default function Gafete() {
+import React from 'react';
+import './gafete.css';
+
+export default function Gafete({ name, position, employeeId, photo }) {
   return (
-    <div className="card">
-  <div className="tools">
-    <div className="circle">
-      <span className="red box"></span>
+    <div className="employee-card">
+      <div className="employee-photo">
+        <img src={photo} alt={`${name}`} />
+      </div>
+      <div className="employee-info">
+        <h2>{name}</h2>
+        <p>{position}</p>
+        <p>ID: {employeeId}</p>
+      </div>
     </div>
-    <div className="circle">
-      <span className="yellow box"></span>
-    </div>
-    <div className="circle">
-      <span className="green box"></span>
-    </div>
-  </div>
-  <div className="card__content">
-  </div>
-</div>
-  )
+  );
 }
+

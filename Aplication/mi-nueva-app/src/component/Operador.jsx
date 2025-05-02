@@ -1,16 +1,15 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import Pie from './Pie';
 import Gafete from './Gafete'
 import TableroAndon from './TableroAndon';
+import kevin from '../imagenes/Kevinromero.jpg'
 import "./operador.css"
 export default function Operador ()  {
-  const navigate = useNavigate();
   return (
     <>
     <div class="parent">
     <div class="div1">
-      <Gafete/>
+      <Gafete name="Kevin B. Romero Hernandez" position="Operador de corte" employeeId={1} photo={kevin}/>
       </div>
     <div class="div2">
       *nota todas las unidaades son cm

@@ -12,6 +12,7 @@
   grid-row: span 3 / span 3;
   border:double #B1B2B9; 
   border-radius: 10px;
+  margin: auto;
 }
 
 .div2 {
