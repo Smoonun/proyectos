@@ -41,8 +41,6 @@ const Form = () => {
           return navigate('/Operador');
         default:
           return navigate('/');
-        
-  
       }
       
     } else {
