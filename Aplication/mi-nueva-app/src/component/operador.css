@@ -4,14 +4,15 @@
   grid-template-rows: repeat(5, 1fr);
   gap: 0px;
   margin: auto;
-  background-color: #8b0f0f;
+  background-color: #1F3A93;
   color: #f0e9e6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
   
 .div1 {
   grid-column: span 2 / span 2;
   grid-row: span 3 / span 3;
-  border:double #B1B2B9; 
+  border:double #F5F6FA; 
   border-radius: 10px;
   margin: auto;
 }
@@ -21,7 +22,7 @@
   grid-row: span 6 / span 6;
   grid-column-start: 5;
   grid-row-start: 1;
-  border:double #B1B2B9; 
+  border:double #F5F6FA; 
   border-radius: 10px;
 }
 
@@ -30,14 +31,14 @@
   grid-row: span 3 / span 3;
   grid-column-start: 3;
   grid-row-start: 1;
-  border:double #B1B2B9;  
+  border:double #F5F6FA;  
   border-radius: 10px;
 }
 .div4 {
   grid-column: span 4 / span 4;
   grid-row: span 3 / span 3;
   grid-row-start: 4;
-  border:double #B1B2B9; 
+  border:double #F5F6FA; 
   border-radius: 10px;
 }
 table{
@@ -47,7 +48,7 @@ table{
   width: 100%;
 }
 th{
-  border: solid #B1B2B9;
+  border: solid #F5F6FA;
   border-radius: 10px;
 }
 tr{
@@ -56,7 +57,7 @@ tr{
 }
 td{
   text-align: center;
-  border: solid #5b5d62;
+  border: solid #F5F6FA;
   border-radius: 10px;
 }
 .btn {
@@ -73,8 +74,8 @@ td{
   font-weight: 700;
   border-radius: 500px;
   overflow: hidden;
-  background: #0f870f;
-  color: #D6CBB6;
+  background: #000000;
+  color: #2C3E50;
 }
 
 .btn span {
@@ -84,7 +85,7 @@ td{
 }
 
 .btn:hover span {
-  color: #1F2A23;
+  color: #2ECC71;
 }
 
 .btn::before,
@@ -99,7 +100,7 @@ td{
 
 .btn::before {
   content: "";
-  background: #000;
+  background: #2ECC71;
   width: 120%;
   left: -10%;
   transform: skew(30deg);
@@ -112,14 +113,15 @@ td{
 .btnvm {
   border: none;
   outline: none;
-  background-color: #3B8585;
+  background-color: #2ECC71;
   padding: 6px 12px;       
   font-size: 10px;         
   font-weight: 600;        
   color: #fff;
   border-radius: 4px;      
   transition: all ease 0.1s;
-  box-shadow: 0px 4px 0px 0px #163C4C;
+  height: 70%;
+  width: 80%;
 }
 
 .btnvm:active {
@@ -132,7 +134,7 @@ td{
   border-radius: 12px;
   color: #212121;
   z-index: 1;
-  background: #e8e8e8;
+  background: #2ECC71;
   position: relative;
   font-weight: 700;
   font-size: 13px;
