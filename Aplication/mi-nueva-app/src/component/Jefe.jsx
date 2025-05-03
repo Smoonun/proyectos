@@ -4,13 +4,14 @@ import Pie from './Pie'
 import Gafete from "./Gafete"
 import './jefe.css'
 import SenialAndon from "./SenialAndon"
+import alda from '../imagenes/Aldahirhernandez.jpg'
 export default function Jefe  ()  {
   const navigate =useNavigate();
   return (
       <> 
         <div class="parent_jefe">
-          <div class="div1"><Gafete name="Erick A. Hernandez Aguirre" positon="Jefe de Produccion" employeeId="Bob Elegante"/> </div>
-          <div class="div2">
+          <div class="div1_jefe"><Gafete name="Erick A. Hernandez Aguirre" positon="Jefe de Produccion" employeeId="Bob Elegante" photo={alda}/> </div>
+          <div class="div2_jefe">
             <table>
               <thead>
                 <tr>
@@ -30,7 +31,7 @@ export default function Jefe  ()  {
               </tbody>
             </table>
           </div>
-          <div class="div3">
+          <div class="div3_jefe">
           <table>
               <thead>
                 <tr>
