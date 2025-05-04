@@ -2,17 +2,14 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [tarea, setTarea] = useState([
-    { text: "tarea1", id: crypto.randomUUID() },
-    { text: "tarea2", id: crypto.randomUUID() },
-    { text: "tarea3", id: crypto.randomUUID() }
-  ]);
-
+  const [tarea, setTarea] = useState([]);
   const [nuevaTarea, setNuevaTarea] = useState('');
+
 
   function handleInputChange(event) {
     setNuevaTarea(event.target.value);
   }
+
 
   const nuevaActividad = (event) => {
     event.preventDefault(); 
@@ -28,11 +25,13 @@ function App() {
     setNuevaTarea('');
   };
 
+
   function BorrarTarea(id) {
     const nuevasTareas = tarea.filter(t => t.id !== id);
     setTarea(nuevasTareas);
   }
 
+  
   return (
     <div className="container">
       <header className="header">
