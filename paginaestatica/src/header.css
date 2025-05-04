@@ -1,0 +1,35 @@
+div{
+    display: flex;
+    align-items: top;
+    background-color: #61B15A;
+}
+img{
+    width: 100px;
+    height: 100px;
+
+}
+h1{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    
+}
+span{
+    margin-top: 20px;
+    padding-left: 100px;
+}
+.nav{
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    margin-top: 20px;
+
+   
+    
+}
+a{
+    text-decoration: none;
+    margin:  10px;
+    justify-content: end;
+}
