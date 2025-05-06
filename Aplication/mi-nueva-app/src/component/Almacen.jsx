@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './almacen.css'
+import fernanda from "../imagenes/Mariaaguilar.jpg"
 import Pie from './Pie'
 import Gafete  from './Gafete'
 export default function Almacen ()  {
@@ -10,7 +11,7 @@ export default function Almacen ()  {
       <div class="parenta">
         <div class="div1a">1
           <span className='spangafete'>
-            <Gafete/>
+            <Gafete name="Maria F. Aguilar Chavez" position="Jefa de logistica" employeeId="062566" photo={fernanda}/>
             <button onClick= {()=>{navigate('/')}}>Login </button>
           </span>
         </div>

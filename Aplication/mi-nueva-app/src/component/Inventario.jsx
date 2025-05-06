@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Pie from './Pie'
+import april from "../imagenes/Aprilgonzales.jpg"
 import './inventario.css'
 import Gafete from './Gafete'
 export default function Inventario ()  {
@@ -9,17 +10,17 @@ export default function Inventario ()  {
     <div class="parenti">
         <div class="div1i">
           <span className="spangafete">
-            <Gafete/>
+            <Gafete name="April Y. Gonzalez" position="jefa de inventario" employeeId="280902" photo={april}/>
             <button onClick= {()=>{navigate('/')}}>Login </button>
           </span>
         </div>
 
         <div class="div2i"><span className="nueva-orden">
-          <input type="text" placeholder="Nombre" className="nptorden"/>
+          <input type="number" placeholder="Nombre" className="nptorden"/>
           <button className="btninventario">Mandar orden de corte</button>
           </span>
           <span className="buscar-orden">
-          <input type="text" placeholder="Buscar" className="nptorden"/>
+          <input type="number" placeholder="Buscar" className="nptorden"/>
           <button className="btninventario">Buscar</button>
           </span>
           <span>
@@ -68,6 +69,7 @@ export default function Inventario ()  {
                 <th>Cantidad</th>
                 <th>Nombre</th>
                 <th>Descripcion</th>
+                <th>Stock</th>
                 <th>Entrada</th>
                 <th>Salida</th>
                 <th>Aceptar</th>
@@ -78,6 +80,7 @@ export default function Inventario ()  {
                 <td>100</td>
                 <td>Hojas de comprimido</td>
                 <td>Color turquesa</td>
+                <td>100</td>
                 <td><input type="number" placeholder="Entrada" /></td>
                 <td><input type="number" placeholder='Salida' /></td>
                 <td><button>Aceptar</button></td>
@@ -86,6 +89,7 @@ export default function Inventario ()  {
               <td>100</td>
                 <td>Hojas de comprimido</td>
                 <td>Color turquesa</td>
+                <td>100</td>
                 <td><input type="number" placeholder="Entrada" /></td>
                 <td><input type="number" placeholder='Salida' /></td>
                 <td><button>Aceptar</button></td>

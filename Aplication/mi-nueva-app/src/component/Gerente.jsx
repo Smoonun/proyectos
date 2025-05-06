@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './gerente.css'
+import ingrid from "../imagenes/Ingridromero.jpg"
 import Pie from './Pie'
 import Gafete from './Gafete'
 import SenialAndon from './SenialAndon'
@@ -11,7 +12,7 @@ export default function Gerente() {
       <div className="parentg">
         <div className="div1g">
           <span className="spangafete">
-          <Gafete/>
+          <Gafete name="Ingrid C. Romero Hernandez" position="Gerente general" employeeId="211005" photo={ingrid}/>
           <button onClick= {()=>{navigate('/')}}>Login </button>
           </span>
         </div>
