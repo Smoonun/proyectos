@@ -1,15 +1,21 @@
 import React from 'react'
 import Pie from './Pie';
+import {useNavigate} from 'react-router-dom'
 import Gafete from './Gafete'
 import TableroAndon from './TableroAndon';
 import kevin from '../imagenes/Kevinromero.jpg'
 import "./operador.css"
 export default function Operador ()  {
+  const navigate = useNavigate();
   return (
     <>
     <div class="parent">
     <div class="div1">
-      <Gafete name="Kevin B. Romero Hernandez" position="Operador de corte" employeeId={1} photo={kevin}/>
+      <span className="spangafete">
+        <Gafete name="Kevin B. Romero Hernandez" position="Operador de corte" employeeId={1} photo={kevin}/>
+        <button  className="btnlg" onClick= {()=>{navigate('/')}}>Login </button>
+      </span>
+  
       </div>
     <div class="div2">
       *nota todas las unidaades son cm
@@ -26,16 +32,6 @@ export default function Operador ()  {
           </tr>
         </thead>
         <tbody>
-          <tr>
-          <td>5</td>
-          <td>costado</td>
-          <td>50</td>
-          <td>100</td>
-          <td>Nogal terracota</td>
-          <td>Chapa 1L largo</td>
-          <td><input type="checkbox" />
-          </td>
-          </tr>
           <tr>
           <td>5</td>
           <td>costado</td>
@@ -75,7 +71,7 @@ export default function Operador ()  {
           </tr>
         </tbody>
       </table>
-      <button className="btnlg">Logout</button>
+     
       </div>
     </div>
     <Pie/>

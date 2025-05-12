@@ -11,7 +11,7 @@ export default function Inventario ()  {
         <div class="div1i">
           <span className="spangafete">
             <Gafete name="April Y. Gonzalez" position="jefa de inventario" employeeId="280902" photo={april}/>
-            <button onClick= {()=>{navigate('/')}}>Login </button>
+            <button className='btnlg' onClick= {()=>{navigate('/')}}>Login </button>
           </span>
         </div>
 

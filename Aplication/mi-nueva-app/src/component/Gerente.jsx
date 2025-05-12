@@ -13,14 +13,14 @@ export default function Gerente() {
         <div className="div1g">
           <span className="spangafete">
           <Gafete name="Ingrid C. Romero Hernandez" position="Gerente general" employeeId="211005" photo={ingrid}/>
-          <button onClick= {()=>{navigate('/')}}>Login </button>
+          <button  className='btnlg' onClick= {()=>{navigate('/')}}>Login </button>
           </span>
         </div>
         <div class="div2g">
           <span className="gerenteNav">
-            <button className="btngerente">Jefe</button>
-            <button className="btngerente">Inventario</button>
-            <button className="btngerente">Almacen</button>
+            <button className="btngerente" onClick= {()=>{navigate('/Jefe-Produccion')}}>Jefe</button>
+            <button className="btngerente" onClick= {()=>{navigate('/Inventario')}}>Inventario</button>
+            <button className="btngerente" onClick= {()=>{navigate('/Almacen')}}>Almacen</button>
           </span>
         </div>
         <div class="div3g">

@@ -8,9 +8,11 @@ import alda from '../imagenes/Aldahirhernandez.jpg'
 export default function Jefe  ()  {
   const navigate =useNavigate();
   return (
-      <> 
+      <div className="fill"> 
         <div class="parent_jefe">
-          <div class="div1_jefe"><Gafete name="Erick A. Hernandez Aguirre" positon="Jefe de Produccion" employeeId="Bob Elegante" photo={alda}/> </div>
+          <div class="div1_jefe"><Gafete name="Erick A. Hernandez Aguirre" positon="Jefe de Produccion" employeeId="Bob Elegante" photo={alda}/>
+          <button className='btnlg' onClick= {()=>{navigate('/')}}>Login </button>
+           </div>
           <div class="div2_jefe">
             <table>
               <thead>
@@ -50,10 +52,9 @@ export default function Jefe  ()  {
                 </tr>
               </tbody>
             </table>
-          <button onClick= {()=>{navigate('/')}}>Login </button>
           </div>
 </div>
       <Pie/>
-    </>
+    </div>
   )
 }

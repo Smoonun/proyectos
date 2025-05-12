@@ -9,10 +9,10 @@ export default function Almacen ()  {
   return (
     <>
       <div class="parenta">
-        <div class="div1a">1
+        <div class="div1a">
           <span className='spangafete'>
             <Gafete name="Maria F. Aguilar Chavez" position="Jefa de logistica" employeeId="062566" photo={fernanda}/>
-            <button onClick= {()=>{navigate('/')}}>Login </button>
+            <button className='btnlg' onClick= {()=>{navigate('/')}}>Login </button>
           </span>
         </div>
         <div class="div2a">
@@ -73,7 +73,7 @@ export default function Almacen ()  {
             </table>
           </span>
         </div>
-        <div class="div3a">3
+        <div class="div3a">
           <span>
             <table>
               <thead>
@@ -91,7 +91,7 @@ export default function Almacen ()  {
             </table>
           </span>
         </div>
-        <div class="div4a">4
+        <div class="div4a">
           <span>
             <table>
               <thead>
